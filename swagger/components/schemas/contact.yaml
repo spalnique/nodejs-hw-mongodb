@@ -1,5 +1,5 @@
 type: object
-required: [name, phoneNumber, userId]
+# required: [name, phoneNumber]
 properties:
   _id:
     description: "Contact's id assigned by MongoDB."
@@ -27,7 +27,7 @@ properties:
     enum: ['personal', 'work', 'home']
     default: personal
   userId:
-    description: "Contact's owner id."
+    description: "Contact's owner id retrieved from MongoDB on login."
     type: string
     example: 65e4decdd286b30065d54af1
   photo:
