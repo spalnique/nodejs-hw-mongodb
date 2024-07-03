@@ -57,10 +57,9 @@
             "name": "sortBy",
             "schema": {
               "type": "string",
-              "default": "_id",
-              "example": "name"
+              "default": "_id"
             },
-            "description": "All contact's fields can be mentioned."
+            "description": "Any of contact's fields can be mentioned."
           },
           {
             "in": "query",
@@ -78,8 +77,7 @@
             "in": "query",
             "name": "isFavourite",
             "schema": {
-              "type": "boolean",
-              "example": "true"
+              "type": "boolean"
             }
           },
           {
