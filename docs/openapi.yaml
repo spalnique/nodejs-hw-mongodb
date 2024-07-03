@@ -4,14 +4,15 @@ info:
   title: Contacts app
   license:
     name: Apache 2.0
-    url: '<http://www.apache.org/licenses/LICENSE-2.0.html>'
+    url: <http://www.apache.org/licenses/LICENSE-2.0.html>
   description: |
     This is a documentation of contacts app
 tags:
   - name: Contacts
     description: Operations with contacts.
 servers:
-  - url: https://nodejs-hw-mongodb-z2cb.onrender.com
+  - url: <http://localhost:3000>
+  - url: <https://nodejs-hw-mongodb-z2cb.onrender.com>
 paths:
   /contacts:
     get:
