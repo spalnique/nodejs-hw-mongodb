@@ -8,7 +8,7 @@ import {
   refreshUserSessionController,
   logoutUserController,
   resetEmailRequestController,
-  resetPasswordController,
+  resetPasswordAndLogoutController,
 } from '../controllers/auth.js';
 import {
   loginUserSchema,
@@ -44,7 +44,7 @@ authRouter.post(
 authRouter.post(
   '/reset-password',
   validateBody(resetPasswordSchema),
-  ctrlWrapper(resetPasswordController),
+  ctrlWrapper(resetPasswordAndLogoutController),
 );
 
 export default authRouter;

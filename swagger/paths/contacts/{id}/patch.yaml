@@ -1,13 +1,8 @@
 tags:
   - Contacts
-summary: Get contact by id
+summary: Patch contact by id
 operationId: patchContactController
-description: Get contact by id
-# requestBody:
-#   content:
-#     multipart/form-data:
-#       schema:
-
+description: Patch contact by id
 security:
   - bearerAuth: []
 parameters:

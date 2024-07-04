@@ -77,7 +77,7 @@ export const resetEmailRequestController = async (req, res, next) => {
   });
 };
 
-export const resetPasswordController = async (req, res, next) => {
+export const resetPasswordAndLogoutController = async (req, res, next) => {
   const {
     body: { token, password },
     cookies: { sessionId },
