@@ -439,8 +439,7 @@
                   "photo": {
                     "description": "Link to Contact's photo.",
                     "type": "string",
-                    "format": "binary",
-                    "example": "https://res.cloudinary.com/uqwgdu/image/upload/image.png"
+                    "format": "binary"
                   }
                 }
               }
@@ -579,7 +578,7 @@
           "photo": {
             "description": "Link to Contact's photo.",
             "type": "string",
-            "example": "<https://res.cloudinary.com/uqwgdu/image/upload/image.png>"
+            "example": "https://res.cloudinary.com/uqwgdu/image/upload/image.png"
           },
           "createdAt": {
             "description": "Contact's creation date.",
