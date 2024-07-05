@@ -5,11 +5,14 @@
     "title": "Contacts app",
     "license": {
       "name": "Apache 2.0",
-      "url": "<http://www.apache.org/licenses/LICENSE-2.0.html>"
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     },
     "description": "This is a documentation of contacts app\n"
   },
   "servers": [
+    {
+      "url": "http://localhost:3000"
+    },
     {
       "url": "https://nodejs-hw-mongodb-z2cb.onrender.com"
     }
@@ -39,17 +42,16 @@
             "in": "query",
             "name": "page",
             "schema": {
-              "type": "integer"
-            },
-            "example": 1
+              "type": "integer",
+              "default": 1
+            }
           },
           {
             "in": "query",
             "name": "perPage",
             "schema": {
               "type": "integer",
-              "default": 10,
-              "example": 5
+              "default": 10
             }
           },
           {
@@ -379,9 +381,9 @@
         "tags": [
           "Contacts"
         ],
-        "summary": "Get contact by id",
+        "summary": "Patch contact by id",
         "operationId": "patchContactController",
-        "description": "Get contact by id",
+        "description": "Patch contact by id",
         "security": [
           {
             "bearerAuth": []
@@ -437,7 +439,8 @@
                   "photo": {
                     "description": "Link to Contact's photo.",
                     "type": "string",
-                    "example": "<https://res.cloudinary.com/uqwgdu/image/upload/image.png>"
+                    "format": "binary",
+                    "example": "https://res.cloudinary.com/uqwgdu/image/upload/image.png"
                   }
                 }
               }
